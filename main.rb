@@ -6,6 +6,11 @@ def play_again
   if re_play.eql? "y"
     Game.new.play
     play_again
+  elsif re_play.eql? "n"
+    puts "Goodbye!"
+  else
+    puts "Invalid Input"
+    play_again
   end
 end
 
